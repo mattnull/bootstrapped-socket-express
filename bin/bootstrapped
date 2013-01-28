@@ -21,6 +21,7 @@ switch (commander.args[0]) {
     wrench.copyDirSyncRecursive(source, name);
     log("Success!");
     log("Next, you should:");
+    log("    sudo npm install supervisor -g")
     log("    cd " + name);
     log("    sudo npm install");
     log("And to start your app:");

@@ -8,7 +8,7 @@ run = (cmd, args) ->
    process.kill(1) if status != 0
 
 task 'start', 'Start the app', ->
-  run 'node', ['server.js']
+  run 'supervisor', ['app.coffee']
 
 task 'test', 'Run mocha tests', ->
   run 'node', ['node_modules/mocha/bin/mocha',
